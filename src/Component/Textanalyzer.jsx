@@ -66,30 +66,21 @@ export default function Textanalyzer(props) {
           To Clear{" "}
         </button>
         <div className="container mt-3">
-          <h3>Summery of Text : </h3>
-          <h5>
+          <h5>Summery of Text : </h5>
+          <h7>
             {" "}
             {newtext.split(" ").length} Words and {newtext.length} Charecters.{" "}
-          </h5>
-          <h5> {0.010 * newtext.split(" ").length} Minutes to read. </h5>
-          <h3>Preview :</h3>
+          </h7>
+          <h5 className="mt-2"> {0.010 * newtext.split(" ").length} Minutes to read. </h5>
+          <p><strong>Preview :</strong></p>
           <p >{newtext.length > 0 ? newtext : " "}</p>
         </div>
       </div>
-      <div className="mt-10">
-            <footer className="bg-light text-center text-lg-start mt-5  ">
-              <div className="text-center p-3 mt-5" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
-                © 2024 Copyright:
-                <a className="text-dark" href="https://mdbootstrap.com/"> TextMagic.com</a>
-              </div>
-              
-              
-              </footer>
+      
               
 
 
 
-      </div>
          
 
     </>
